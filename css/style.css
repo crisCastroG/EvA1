@@ -1,0 +1,28 @@
+.center-text{
+  text-align: center;
+}
+
+.big-button{
+  width: 25%;
+}
+
+.product-card{
+  width: 450px;
+  height: 240px;
+  padding: 10px;
+}
+
+.product-img{
+  width: 220px;
+  height: 220px;
+}
+
+.product-cart{
+  width: 100px;
+  height: 100px;
+}
+
+a{
+  color: unset;
+  text-decoration: none;
+}
