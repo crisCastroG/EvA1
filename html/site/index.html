@@ -3,79 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>Document</title>
     <link rel="stylesheet" href="../../css/bootstrap.css">
     <link rel="stylesheet" href="../../css/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div>
-        <header>
-            <div class = "container-fluid" >
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="p-3 ">
-                        <a href="index.html"><img  src="../../img/pcshop_logo.png" alt="pcshopLogo" height="74"></a>
-                    </div>
-                    <div class="p-6">
-                        <div class="d-flex align-items-center">
-                            <div class="p-8">
-                                 <input type="text" class="form-control" placeholder="Buscar un producto...">
-                            </div>
-                            <div class="p-4">
-                                <button class="btn btn-secondary">Buscar</button>
-                            </div>
+        <div class = "container-fluid" >
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="p-3 ">
+                    <a href="index.html"><img  src="../../img/pcshop_logo.png" alt="pcshopLogo" height="74"></a>
+                </div>
+                <div class="p-6">
+                    <div class="d-flex align-items-center">
+                        <div class="p-8">
+                             <input type="text" class="form-control" placeholder="Buscar un producto...">
+                        </div>
+                        <div class="p-4">
+                            <button class="btn btn-secondary"><a href="busqueda.html">Buscar</a></button>
                         </div>
                     </div>
-                    <div class="p-1">
-                        <div class="row">
-                            <a href="../site/carrito.html" class="col"><h1>Carrito</h1></a>
-                            <h1 class="col">/</h1>
-                            <a href="" class="col"><h1>Ingresar</h1></a>
-                        </div>
-
-                    </div>
+                </div>
+                <div class="p-1">
+                <div class="row">
+                  <button
+                    type="button"
+                    class="btn btn-primary col-6"
+                  >
+                  <a href="carrito.html">Carrito</a>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-secondary col-6"
+                  >
+                  <a href="login.html">Ingresar</a>
+                  </div>
                 </div>
             </div>
-        </header>
-        <div>
-            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-                <div class="container-fluid">
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="nav-link" href="../site/productos.html">Procesadores</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="../site/productos.html">GPUS</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="../site/productos.html">Motherboards</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="../site/productos.html">Memorias</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="../site/productos.html">Discos duros</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="../site/productos.html">Gabinetes</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="../site/productos.html">Fuentes</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="../site/productos.html">Accesorios</a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
+        </div>
+    <nav class="navbar navbar-expand-xxl navbar-dark  bg-dark ">
+        <a class="navbar-brand ms-3" href="index.html">Inicio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="productos.html">Procesadores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="productos.html">GPUS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="productos.html">Motherboards</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="productos.html">Memorias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="productos.html">Discos Duros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="productos.html">Gabinetes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="productos.html">Fuentes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="productos.html">Ventilación</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="productos.html">Accesorios</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
         </div>
         <div></div>
         <div class="mt-4 p-5 bg-dark text-white">
             <h1>Bienvenido a lo último en componentes para tu PC.</h1>
             <p>Visita nuestras distintas secciones:</p>
             <div class="d-flex justify-content-between align-items-center">
-                <a href="../site/productos.html" class="p-3 btn btn-primary big-button"><h2>Ofertas</h2></a>
-                <a href="../site/productos.html" class="p-3 btn btn-primary big-button"><h2>Novedades</h2></a>
-                <a href="../site/productos.html" class="p-3 btn btn-primary big-button"><h2>Preventas</h2></a>
+                <a href="../site/productos.html" class="p-3 btn btn-primary big-button"><h3 >Ofertas</h3></a>
+                <a href="../site/productos.html" class="p-3 btn btn-primary big-button"><h3>Novedades</h3></a>
+                <a href="../site/productos.html" class="p-3 btn btn-primary big-button"><h3>Preventas</h3></a>
             </div>
         </div>
         <div class="container mt-3">
@@ -85,7 +98,7 @@
             <div class="row">
                 <div class="col mb-5">
                     <div class="container rounded border bg-light product-card">
-                        <a href="">
+                        <a href="info_producto.html">
                           <div class="row">
                             <div class="col"> <img src="../../img/gpu.png" alt="" class="product-img rounded"></div>
                             <div class="col">
@@ -99,7 +112,7 @@
                 </div>
                 <div class="col mb-5">
                     <div class="container rounded border bg-light product-card">
-                        <a href="">
+                        <a href="info_producto.html">
                           <div class="row">
                             <div class="col"> <img src="../../img/gpu.png" alt="" class="product-img rounded"></div>
                             <div class="col">
@@ -113,7 +126,7 @@
                 </div>
                 <div class="col mb-5">
                     <div class="container rounded border bg-light product-card">
-                        <a href="">
+                        <a href="info_producto.html">
                           <div class="row">
                             <div class="col"> <img src="../../img/gpu.png" alt="" class="product-img rounded"></div>
                             <div class="col">
@@ -127,7 +140,7 @@
                 </div>
                 <div class="col mb-5">
                     <div class="container rounded border bg-light product-card">
-                        <a href="">
+                        <a href="info_producto.html">
                           <div class="row">
                             <div class="col"> <img src="../../img/gpu.png" alt="" class="product-img rounded"></div>
                             <div class="col">
