@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../../css/style.css">
     <script>src="script.js"</script>
-    <title>Productos</title>
+    <title>Ventas</title>
 </head>
 <body>
     <div class="container-fluid">
@@ -106,7 +106,8 @@
                     <a
                       class="nav-link px-3 sidebar-link"
                       data-bs-toggle="collapse"
-                      href="../dashboard/productos.html">
+                      href="../dashboard/productos.html"
+                    >
                       <span class="me-2"><i class="bi bi-bag"></i></span>
                       <span>Productos</span>
                       <span class="ms-auto">
@@ -138,7 +139,7 @@
             </div>
           </div>   
 <div class="container-fluid" style="margin-top: 5vw;">
-  <H1 class="font-monospace  text-uppercase">LISTA DE PRODUCTOS</H1>   
+  <H1 class="font-monospace  text-uppercase">VENTAS</H1>   
   <nav aria-label="Page navigation">
     <ul class="pagination justify-content-end ">
       <li class="page-item disabled">
@@ -164,35 +165,36 @@
     <table class="table table-bordered table-striped">
         <thead>
             <tr>
-              <th scope="col">Codigo</th>
-              <th scope="col">Foto</th>
-              <th scope="col">Nombre</th>
-              <th scope="col">Stock</th>
-              <th scope="col">Editar</th>
+              <th scope="col">Nro Pedido</th>
+              <th scope="col">Cliente</th>
+              <th scope="col">Correo Cliente</th>
+              <th scope="col">Resumen Pedido</th>
+              <th scope="col">Estado</th>
               <a href="dashboard.html"></a>  
             </tr>        
         </thead>
         <tbody class="table-group-divider">
-          <tr>
-            <th class="align-middle" scope="row">100</th>
-            <td><div class="container-fluid " style="width: 100PX;"><img src="../../img/30502.jpg" class="img-fluid"></td></div>
-            <td class="align-middle ">TARJETA SUPER PRO</td>
-            <td class="align-middle ">10</td>
-            <td class="align-middle " colspan="2">Ver informacion <button><i class="bi bi-pencil-square"></i></button></td>
+          <tr class="table-info" >
+            <th class="align-middle" scope="row">246</th>
+            <td class="align-middle text-uppercase">Jorge Gonzales</td>
+            <td class="align-middle text-uppercase">jorg.go@email.com</td>
+            <td class="align-middle text-uppercase ">x1 $299.990 Gigabyte NVIDIA GEFORCE RTX 4060 GAMING OC 8GB</td>
+            <td class="align-middle  text-uppercase">ACTIVO</td>
           </tr>
-          <tr>
-            <th scope="row">101</th>
-            <td><div class="container-fluid " style="width: 100PX;"><img src="../../img/30502.jpg" class="img-fluid"></td></div>
-            <td class="align-middle ">TARJETA SUPER PRO 2</td>
-            <td class="align-middle ">20</td>
-            <td class="align-middle " colspan="2">Ver informacion <button><i class="bi bi-pencil-square"></i></button></td>
+          <tr class="table-danger">
+            <th scope="row">247</th>
+            <td class="align-middle text-uppercase">Emmanuel Flores</td>
+            <td class="align-middle text-uppercase">ema.flo@email.com</td>
+            <td class="align-middle text-uppercase ">x1 $400.000 MSI Tarjeta de Video NVIDIA GeForce RTX 4060 VENTUS 2X BLACK 8G OC</td>
+            <td class="align-middle text-uppercase">CANCELADO</td>
           </tr>
-          <tr>
-            <th scope="row">102</th>
-            <td><div class="container-fluid " style="width: 100PX;"><img src="../../img/30502.jpg" class="img-fluid"></td></div>
-            <td class="align-middle ">TARJETA SUPER PRO 3</td>
-            <td class="align-middle ">30 </td>
-            <td class="align-middle " colspan="2">Ver informacion <button><i class="bi bi-pencil-square"></i></button></td>
+          <tr class="table-success">
+            <th scope="row">248</th>
+            <td class="align-middle text-uppercase">Alvaro Sanchez</td>
+            <td class="align-middle text-uppercase">alv.san@email.com</td>
+            <td class="align-middle text-uppercase">x1 ASUS Tarjeta de Video Dual GeForce RTX 3050 OC, 8GB GDDR6 
+            <p>x2 RAM Kingston 8GB 3200MHz Fury Beast RGB DDR4</p></td>
+            <td class="align-middle ">COMPLETADO</td>
           </tr>
         </tbody>
       </table>
