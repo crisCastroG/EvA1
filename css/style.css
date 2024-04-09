@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
 body,
 button {
@@ -37,4 +38,47 @@ button {
     height: calc(100% - var(--topNavbarHeight));
     top: var(--topNavbarHeight);
   }
+
+.center-text{
+  text-align: center;
+}
+
+.big-button{
+  width: 25%;
+}
+
+.product-card{
+  width: 340px;
+  height: 240px;
+  padding: 10px;
+  word-wrap: break-word;
+}
+
+.product-img{
+  width: 140px;
+  height: 140px;
+}
+
+.product-cart{
+  width: 100px;
+  height: 100px;
+}
+
+.product-info{
+  width: 26vw;
+}
+
+a{
+  color: unset;
+  text-decoration: none;
+}
+
+.wrap{
+  text-wrap: nowrap;
+}
+
+.link-style{
+  color: cadetblue; 
+  text-decoration: underline;
+
 }
