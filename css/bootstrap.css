@@ -3938,6 +3938,11 @@ textarea.form-control-lg {
   text-align: center;
 }
 
+.navbar-nav > .nav-item{
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
 .nav-fill .nav-item .nav-link,
 .nav-justified .nav-item .nav-link {
   width: 100%;
