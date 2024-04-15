@@ -48,15 +48,14 @@ button {
 }
 
 .product-card{
-  width: 400px;
-  height: 260px;
+  width: 300px;
   padding: 10px;
-  word-wrap: break-word;
+
 }
 
 .product-img{
-  width: 140px;
-  height: 140px;
+  width: 120px;
+  height: 120px;
 }
 
 .product-cart{
@@ -65,7 +64,7 @@ button {
 }
 
 .product-info{
-  width: 26vw;
+  width: 300px;
 }
 
 a{
@@ -78,7 +77,7 @@ a{
 }
 
 .link-style{
-  color: cadetblue; 
+  color: cadetblue;
   text-decoration: underline;
 
 }
