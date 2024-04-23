@@ -115,29 +115,41 @@
             </nav>
         </div>
     </div>
-    <div class="container-fluid" style="margin-top: 4vw;">
-        <H1 class="font-monospace  text-uppercase ">AÑADIR PRODUCTO</H1>
-        <form action="../dashboard/productos.html" method="post">
-            <div class="form-group col-md-2">
-                <label for="exampleFormControlInput1">Codigo del producto</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1">
+    <div class="row">
+        <div class="col">
+
+        </div>
+        <div class="col">
+            <div class="container-fluid" style="margin-top: 4vw;">
+                <H1 class="font-monospace  text-uppercase ">AÑADIR PRODUCTO</H1>
+                <form action="../dashboard/productos.html" method="post" class="needs-validated">
+                    <div class="form-group">
+                        <label for="codigoproducto" class="form-label">Codigo del producto</label>
+                        <input type="number" class="form-control" id="codigoproducto" placeholder="Ingrese el codigo del producto" name="codigoproducto" required>
+                    </div>
+                        <div class="form-group col-md">
+                            <label for="imagenproducto">Añadir imagen del producto</label>
+                            <input type="file" class="form-control form-control-file" id="imagenproducto" aria-label="file example" required>
+                            <div class="invalid-feedback">Archivo invalido</div>
+                        </div>
+                    <div class="form-group">
+                            <label for="nombredelproducto" class="form-label">Nombre del producto</label>
+                            <input type="text" class="form-control" id="nombredelproducto" placeholder="Ingrese el nombre del producto" minlength="1" required>
+                      </div>
+                    <div class="form-group col-md">
+                        <label for="stockproducto">Stock del producto</label>
+                        <input type="number" class="form-control" id="stockproducto" required>
+                    </div>
+                    <div style="margin-top: 1vw">
+                        <button type="submit" class="btn btn-primary">Añadir</button>
+                    </div>
+                </form>
             </div>
-            <form>
-                <div class="form-group">
-                    <label for="exampleFormControlFile1">Añadir imagen del producto</label>
-                    <input type="file" class="form-control form-control-file" id="exampleFormControlFile1">
-                </div>
-            </form>
-            <div class="form-group col-md">
-                <label for="exampleFormControlInput1">Nombre del producto</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1">
-            </div>
-            <div class="form-group col-md-1">
-                <label for="exampleFormControlInput1">Stock del producto</label>
-                <input type="number" class="form-control" id="exampleFormControlInput1">
-            </div>
-            <div style="margin-top: 1vw">
-            <button type="submit" class="btn btn-primary">Añadir</button>
-         </div>
-        </form>
-    </div>
+        </div>
+        <div class="col">
+
+        </div>
+
+    </div>   
+</body>
+</html>
