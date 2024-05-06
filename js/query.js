@@ -1,19 +1,16 @@
 $(document).ready(function () {
-    $.getJSON('https://mindicador.cl/api', function (data) {
-        $('#dolar').text("Valor dolar: $" + data.dolar.valor)
-    }).fail(function () {
-        $('#spin').hide();
-        $('#spintext').hide();
-        $('#dolar').removeClass("h5");
-        $('#dolar').css("font-size","10px");
-        $('#dolar').text("Error al cargar datos");
+    $.getJSON('https://saurav.tech/NewsAPI/top-headlines/category/technology/us.json', function (data) {
+        console.log(data)
+        $('seccionNoticia').hide();
+
+    }).fail(function () {   
+
     }).done(function(data){
-        $("#spin").hide();
-        $("#spin2").hide();
-        $("#spin3").hide();
-        $("#spintext").hide();
-        $("#dolar").text("Valor dolar: $" + data.dolar.valor);
-        $("#utm").text("Valor UTM: $" + data.utm.valor);
-        $("#uf").text("Valor UF: $" + data.uf.valor);
+        $('#textoNoticia').text("" + data.articles[1].description);
+        $('#headerNoticia').text("" + data.articles[1].title);
+        $('#noticiaImagen').attr("src",data.articles[1].urlToImage);
+        $('#linkNoticia').attr("href",data.articles[1].url);
+        $('#spinnerNoticia').hide();
+        $('seccionNoticia').show();
     });
 });
