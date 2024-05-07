@@ -13,43 +13,46 @@
 <body>
     <div class="container p-5" style="width: 450px;">
         <img src="../../img/pcshop_logo.png" alt="" class="img-fluid">
-        <div class="mb-1 text-center"><h1 >Iniciar Sesión</h1></div>
-        <div class="container bg-light border rounded" style="width: 350px;">
-            <div class="mb-3">
-            <label for="" class="form-label">Email</label>
-            <input
-                type="email"
-                class="form-control"
-                name=""
-                id=""
-                aria-describedby="emailHelpId"
-                placeholder="Ingrese su email..."
-            />
+        <div class="mb-1 text-center"><h2>Iniciar Sesión</h2></div>
+        <form action="index.html" class="needs-validation">
+            <div class="container bg-light border rounded" style="width: 350px;">
+                <div class="mb-3">
+                <label for="" class="form-label">Email</label>
+                <input
+                    type="email"
+                    class="form-control"
+                    name="usuario"
+                    id=""
+                    aria-describedby="emailHelpId"
+                    placeholder="Ingrese su email..."
+                    required
+                />
+                </div>
+                <div class="mb-3">
+                <label for="" class="form-label">Contraseña</label>
+                <input
+                    type="password"
+                    class="form-control"
+                    name="pass"
+                    id=""
+                    placeholder="Ingrese contraseña...."
+                    required
+                />
+                </div>
+                <div class="text-center mt-3">
+                <button
+                    type="submit"
+                    class="btn btn-success w-75"
+                >
+                    Ingresar
+                </button>
+                </div>
+                <div class="container text-center mt-2 link-style">
+                    <a href="registro.html"><h5>Registrate aquí</h5></a>
+                </div> 
             </div>
-            <div class="mb-3">
-            <label for="" class="form-label">Contraseña</label>
-            <input
-                type="password"
-                class="form-control"
-                name=""
-                id=""
-                placeholder="Ingrese contraseña...."
-            />
-            </div>
-            <div class="text-center mt-3">
-            <button
-                type="button"
-                class="btn btn-success w-75"
-            >
-                <a href="index.html">Ingresar</a>
-            </button>
-            </div>
-        <div class="container text-center mt-2 link-style">
-            <a href="registro.html"><h5>Registrate aquí</h5></a>
-        </div> 
-     </div>
+         </form>
      <a href="index.html"><h4 class="link-style text-center mt-3">Volver al inicio</h4></a> 
-    </div>
-    
+    </div>    
 </body>
 </html>
