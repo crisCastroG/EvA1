@@ -25,7 +25,7 @@ function validarRut()
     if(!Fn.validaRut(rut))
     {
 		console.log("rut invalido")
-        document.getElementById("ruterror").innerHTML = "Rut inválido, ingrese nuevamente";
+        document.getElementById("ruterror").innerHTML = "Rut inválido, ingrese su rut sin puntos y con guión.";
     }
 	else
 	{
