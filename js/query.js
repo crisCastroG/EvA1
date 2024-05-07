@@ -3,7 +3,10 @@ $(document).ready(function () {
         console.log(data)
         $('seccionNoticia').hide();
 
-    }).fail(function () {   
+    }).fail(function () {
+        $('#spinnerNoticia').hide();
+        $('seccionNoticia').show();
+        $('#textoNoticia').text("Error el cargar noticia.");
 
     }).done(function(data){
         $('#textoNoticia').text("" + data.articles[1].description);
