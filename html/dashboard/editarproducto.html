@@ -125,7 +125,7 @@
                 <form action="../dashboard/productos.html" method="post" class="needs-validated">
                     <div class="form-group col-md">
                         <label for="precioproducto">Modifique el precio del producto</label>
-                        <input name="precioproducto" type="number" class="form-control" id="precioproducto" required>
+                        <input name="precioproducto" type="number" pattern="[0-9]" class="form-control" id="precioproducto" required>
                     </div>
                     <div class="form-group col-md">
                         <label for="imagenproducto">Añadir imagen del producto</label>
@@ -140,7 +140,7 @@
                     </div>
                     <div class="form-group col-md">
                         <label for="stockproducto">Modifique el stock del producto</label>
-                        <input name="stockproducto" type="number" class="form-control" id="stockproducto" required>
+                        <input name="stockproducto" type="number" pattern="[0-9]" class="form-control" id="stockproducto" required>
                     </div>
                     <div class="form-group">
                         <label for="descripcionproducto" class="form-label">Modifique la descripcion del Producto</label>

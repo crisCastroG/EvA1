@@ -125,22 +125,22 @@
                 <form action="../dashboard/productos.html" method="post" class="needs-validated">
                     <div class="form-group col-md">
                         <label for="precioproducto">Añada el precio del producto</label>
-                        <input name="precioproducto" type="number" class="form-control" id="precioproducto" required>
+                        <input name="precioproducto" type="number" pattern="[0-9]" class="form-control" id="precioproducto" required>
                     </div>
                     <div class="form-group col-md">
                         <label for="imagenproducto">Añadir imagen del producto</label>
-                        <input name="imagenproducto" type="file" class="form-control form-control-file" id="imagenproducto"
+                        <input name="imagenproducto" type="file"  class="form-control form-control-file" id="imagenproducto"
                             aria-label="file example" required>
                         <div class="invalid-feedback">Archivo invalido</div>
                     </div>
                     <div class="form-group">
                         <label for="nombredelproducto" class="form-label">Nombre del producto</label>
                         <input name="nombredelproducto" type="text" class="form-control" id="nombredelproducto"
-                            placeholder="Ingrese el nombre del producto" minlength="1" required>
+                            placeholder="Ingrese el nombre del producto" minlength="1" maxlength="50" required>
                     </div>
                     <div class="form-group col-md">
                         <label for="stockproducto">Stock del producto</label>
-                        <input name="stockproducto" type="number" class="form-control" id="stockproducto" required>
+                        <input name="stockproducto" type="number" pattern="[0-9]" class="form-control" id="stockproducto" required>
                     </div>
                     <div class="form-group">
                         <label for="descripcionproducto" class="form-label">Descripcion del Producto</label>
